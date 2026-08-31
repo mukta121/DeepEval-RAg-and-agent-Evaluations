@@ -68,3 +68,10 @@ deepeval_rag_agent_framework/
     ├── models.py
     ├── reporting.py
     └── runner.py
+
+python deepeval_rag_evaluator.py ^
+  --ground-truth data\ground_truth.json ^
+  --responses data\response_generator.json ^
+  --output outputs\evaluation_deepeval_result.json ^
+  --excel-output outputs\evaluation_deepeval_result.xlsx ^
+  --raw-output outputs\deepeval_raw_output.json
